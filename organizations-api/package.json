@@ -1,0 +1,18 @@
+{
+  "name": "organizations-api",
+  "version": "1.0.0",
+  "description": "simple api that returns organizations (pipedrive challenge)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marco Talento",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "compression": "^1.6.2",
+    "express": "^4.15.3",
+    "mysql2": "^1.2.0"
+  }
+}

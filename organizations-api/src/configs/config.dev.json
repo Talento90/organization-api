@@ -1,0 +1,14 @@
+{
+    "database": {
+        "host": "localhost",
+        "user": "root",
+        "password": "root",
+        "connectionLimit": 100,
+        "database": "organizations",
+        "debug": false
+    },
+    "server": {
+        "port": 5000,
+        "pageSize": 100
+    }
+}
