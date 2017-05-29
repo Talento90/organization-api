@@ -9,6 +9,9 @@
     },
     "server": {
         "port": 5000,
-        "pageSize": 100
+        "pageSize": 100,
+        "logger": {
+            "format": "tiny"
+        }
     }
 }
