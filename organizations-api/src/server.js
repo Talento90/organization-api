@@ -13,14 +13,13 @@ module.exports.init = function (configs, db) {
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
 
+    // setup routes
+    organizations.init(app, configs, db)
 
     app.use(function (err, req, res, next) {
         console.log(err);
         res.status(500).send(err);
     })
-
-    // setup routes
-    organizations.init(app, configs, db)
 
     return app;
 };
