@@ -14,5 +14,9 @@
     "compression": "^1.6.2",
     "express": "^4.15.3",
     "mysql2": "^1.2.0"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
   }
 }
