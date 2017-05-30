@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "generate": "node test/index.js"
+    "generate": "node test/index.js",
+    "start-pm2": "pm2 start pm2.json"
   },
   "author": "Marco Talento",
   "license": "MIT",

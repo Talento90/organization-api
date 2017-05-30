@@ -3,10 +3,9 @@ const mysql = require('mysql2/promise');
 module.exports.init = function (configs) {
 
     return mysql.createPool({
-        host: configs.host,
-        user: configs.user,
-        //password: configs.password,
-        connectionLimit: configs.connectionLimit,
+        host: process.env.MYSQL_HOST || configs.host,
+        user: process.env.MYSQL_USER || configs.user,
+        connectionLimit: process.env.MYSQL_CONNECTION_LIMIT || configs.connectionLimit,
         database: configs.database,
         debug: configs.debug
     });

@@ -3,7 +3,7 @@
         "host": "localhost",
         "user": "root",
         "password": "root",
-        "connectionLimit": 100,
+        "connectionLimit": 10,
         "database": "organizations",
         "debug": false
     },

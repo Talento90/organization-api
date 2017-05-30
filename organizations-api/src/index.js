@@ -18,7 +18,7 @@ const db = database.init(dbConfig);
 const serverConfig = configs.getServerConfig();
 const appServer = server.init(serverConfig, db);
 
-appServer.listen(serverConfig.port, () => {
+appServer.listen(process.env.PORT || serverConfig.port, () => {
     console.log('Server running at:', serverConfig.port);
 });
 

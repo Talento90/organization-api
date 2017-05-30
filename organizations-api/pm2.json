@@ -1,0 +1,12 @@
+{
+    "apps": [{
+        "exec_mode": "cluster",
+		"instances" : 4,
+        "script": "./src/index.js",
+        "name": "organizations-api",
+        "interpreter": "node",
+        "env": {
+            "NODE_ENV": "dev"
+        }
+    }]
+}

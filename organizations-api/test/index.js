@@ -1,7 +1,7 @@
 const request = require('request-promise');
 
 const bulkSize = 100;
-const iterations = 100;
+const iterations = 1000;
 
 for (let i = 0; i < iterations; ++i) {
 	let relations = [];
